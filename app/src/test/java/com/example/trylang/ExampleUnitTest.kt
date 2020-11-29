@@ -1,4 +1,4 @@
-package com.example.courseproject
+package com.example.trylang
 
 import org.junit.Test
 
