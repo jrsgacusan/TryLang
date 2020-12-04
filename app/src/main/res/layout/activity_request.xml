@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".buyer_activities.RequestActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="729dp">
+
+                <EditText
+                    android:id="@+id/title_activityRequest"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:hint="Title of the Service"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:selectAllOnFocus="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/titleTextView_activityRequest" />
+
+                <EditText
+                    android:id="@+id/price_activityRequest"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:hint="Price Offer"
+                    android:inputType="number"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:selectAllOnFocus="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/description_activityRequest" />
+
+                <EditText
+                    android:id="@+id/description_activityRequest"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:hint="Explain your request"
+                    android:inputType="textMultiLine"
+                    android:scrollHorizontally="true"
+                    android:lines="4"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/title_activityRequest" />
+
+                <TextView
+                    android:id="@+id/titleTextView_activityRequest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="156dp"
+                    android:text="CREATE REQUEST"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/button_requestActivity"
+                    android:layout_width="127dp"
+                    android:layout_height="68dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Create"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/price_activityRequest" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

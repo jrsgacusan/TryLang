@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGroundShadow"
+    tools:context=".seller_activities.CreateServicesActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="60dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/title_createServices"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:hint="Title of the Service"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:selectAllOnFocus="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/titleTextView_createServices" />
+
+                <EditText
+                    android:id="@+id/description_createServices"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:hint="Short description of your service"
+                    android:inputType="textMultiLine"
+                    android:scrollHorizontally="true"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:selectAllOnFocus="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/title_createServices" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="152dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="153dp"
+                    android:text="Service Category"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/description_createServices" />
+
+                <EditText
+                    android:id="@+id/price_createServices"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="70dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:hint="Price"
+                    android:inputType="number"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:selectAllOnFocus="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spinner_createServices" />
+
+                <Spinner
+                    android:id="@+id/spinner_createServices"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginEnd="70dp"
+                    android:elevation="2dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+                <Button
+                    android:id="@+id/button_createServices"
+                    android:layout_width="109dp"
+                    android:layout_height="53dp"
+                    android:layout_marginStart="162dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="161dp"
+                    android:text="Create"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/price_createServices" />
+
+                <TextView
+                    android:id="@+id/titleTextView_createServices"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="148dp"
+                    android:inputType="number"
+                    android:text="FILL UP THE FOLLOWING"
+                    android:textSize="24dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.507"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/profileImageUrl_activityCreateServices"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="158dp"
+                    android:layout_marginTop="42dp"
+                    android:layout_marginEnd="253dp"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

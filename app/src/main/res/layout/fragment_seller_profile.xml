@@ -35,7 +35,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <ImageView
-                    android:id="@+id/profilePic"
+                    android:id="@+id/profileImage_fragmentSellerProfile"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
@@ -44,7 +44,7 @@
             </androidx.cardview.widget.CardView>
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/userName_fragmentSellerProfile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="User Name"
@@ -107,7 +107,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|center"
                 android:padding="10dp"
-                android:text="About Me" />
+                android:text="About Me As Seller" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -140,7 +140,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/seller_buyersRequestCardView"
+            android:id="@+id/buyersRequestCardView_fragmentSellerProfile"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_marginStart="50dp"

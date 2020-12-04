@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGroundShadow"
+    tools:context=".ProfileSettingsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/ageEditText_profileSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:hint="Age"
+                    android:inputType="number"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:selectAllOnFocus="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/emailAddEditText_profileSettings" />
+
+                <EditText
+                    android:id="@+id/lastNameEditText_profileSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:hint="Last Name"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:selectAllOnFocus="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/firstNameEditText_profileSettings" />
+
+                <EditText
+                    android:id="@+id/emailAddEditText_profileSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:hint="Email"
+                    android:inputType="text"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:selectAllOnFocus="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/mobileNumberEditText_profileSettings" />
+
+                <EditText
+                    android:id="@+id/mobileNumberEditText_profileSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:hint="Mobile Number"
+                    android:inputType="number"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:selectAllOnFocus="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lastNameEditText_profileSettings" />
+
+                <EditText
+                    android:id="@+id/firstNameEditText_profileSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:hint="First Name"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:selectAllOnFocus="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/userBio_profileSettings" />
+
+                <EditText
+                    android:id="@+id/userBio_profileSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:inputType="textMultiLine"
+                    android:hint="Bio"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:selectAllOnFocus="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageCardView_profileSettings" />
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/profileSettingToolBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/colorPrimary"
+                    android:elevation="10dp"
+                    android:minHeight="?attr/actionBarSize"
+                    android:theme="?attr/actionBarTheme"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/imageCardView_profileSettings"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="1000dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profileSettingToolBar" >
+
+                    <ImageView
+                        android:id="@+id/profileImageView_profileSettings"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:cropToPadding="false"
+                        android:scaleType="centerCrop"
+                        tools:srcCompat="@tools:sample/avatars" />
+
+                    <ImageView
+                        android:id="@+id/uploadNewImage_profileSettings"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:visibility="invisible"
+                        app:srcCompat="@drawable/ic_addd" />
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/btn_profileSettings"
+                    android:layout_width="114dp"
+                    android:layout_height="63dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="Update"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ageEditText_profileSettings" />
+
+                <TextView
+                    android:id="@+id/userUid_profileSettings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="47dp"
+                    android:layout_marginEnd="55dp"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toStartOf="@+id/imageCardView_profileSettings"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profileSettingToolBar" />
+
+                <TextView
+                    android:id="@+id/profileImageUrl_profileSettings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="47dp"
+                    android:layout_marginEnd="55dp"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toStartOf="@+id/imageCardView_profileSettings"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profileSettingToolBar" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

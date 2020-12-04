@@ -5,4 +5,30 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="services_category">
+        <item>Computer Repair</item>
+        <item>Home Cleaning</item>
+        <item>Plumbing</item>
+        <item>Electrical, Wiring, Lighting</item>
+        <item>Moving</item>
+        <item>Delivery</item>
+        <item>Aircon</item>
+        <item>Home Repair</item>
+    </string-array>
+
+    <string-array name="educationStatus">
+        <item>Primary School Graduate</item>
+        <item>Secondary School Graduate</item>
+        <item>High School Graduate</item>
+        <item>University Graduate</item>
+        <item>Postgraduate</item>
+        <item>On going</item>
+    </string-array>
+
+    <string-array name="skillLevel">
+        <item>Beginner</item>
+        <item>Intermediate</item>
+        <item>Expert</item>
+    </string-array>
+
 </resources>

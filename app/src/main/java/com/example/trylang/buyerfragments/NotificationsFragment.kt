@@ -5,11 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatActivity
-import com.example.trylang.BuyerActivity
+import com.example.trylang.buyer_activities.BuyerActivity
 import com.example.trylang.R
-import com.example.trylang.SellerActivity
-import com.example.trylang.bottomNavigationBuyer
+import com.example.trylang.buyer_activities.bottomNavigationBuyer
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

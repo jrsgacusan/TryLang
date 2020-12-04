@@ -7,9 +7,8 @@ import android.view.ViewGroup
 import android.widget.SearchView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.example.trylang.BuyerActivity
 import com.example.trylang.R
-import com.example.trylang.bottomNavigationBuyer
+import com.example.trylang.buyer_activities.bottomNavigationBuyer
 
 
 class SearchFragment : Fragment() {

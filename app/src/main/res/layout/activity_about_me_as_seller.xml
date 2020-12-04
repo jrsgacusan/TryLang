@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGroundShadow"
+    tools:context=".seller_activities.AboutMeAsSellerActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolBar_activityAboutMeAsSeller"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/colorPrimary"
+                    android:elevation="10dp"
+                    android:minHeight="?attr/actionBarSize"
+                    android:theme="?attr/actionBarTheme"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:navigationIcon="@drawable/ic_back" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/skillsContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="50dp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+                    <EditText
+                        android:id="@+id/addSkillsEditText_acitivityAboutMeAsSeller"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/rounded_edit_text"
+                        android:enabled="false"
+                        android:hint="Add Skill "
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:selectAllOnFocus="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageButton
+                        android:id="@+id/addImageButton_activityAboutMeAsSeller"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="4dp"
+                        app:layout_constraintStart_toEndOf="@+id/cancleImageButton_activityAboutMeAsSeller"
+                        app:layout_constraintTop_toBottomOf="@+id/expertiseLevelSpinner_acitivityAboutMeAsSeller"
+                        app:srcCompat="@drawable/ic_addd" />
+
+                    <ImageButton
+                        android:id="@+id/cancleImageButton_activityAboutMeAsSeller"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="104dp"
+                        android:layout_marginTop="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/expertiseLevelSpinner_acitivityAboutMeAsSeller"
+                        app:srcCompat="@drawable/ic_cancel" />
+
+                    <Spinner
+                        android:id="@+id/expertiseLevelSpinner_acitivityAboutMeAsSeller"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/addSkillsEditText_acitivityAboutMeAsSeller" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <TextView
+                    android:id="@+id/textView09293"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="64dp"
+                    android:layout_marginTop="28dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Jobs Accomplished:"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/toolBar_activityAboutMeAsSeller" />
+
+                <TextView
+                    android:id="@+id/textView032"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="64dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="User Rating:"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView09293" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Why are you offering your service?"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView032" />
+
+                <EditText
+                    android:id="@+id/description_activityAboutMeAsSeller"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:hint="Explain here"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:selectAllOnFocus="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Skills"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.247"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/description_activityAboutMeAsSeller" />
+
+
+                <TextView
+                    android:id="@+id/textView112"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Education"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.247"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/skillsListView_activityAboutMeAsSeller" />
+
+                <ListView
+                    android:id="@+id/skillsListView_activityAboutMeAsSeller"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/listview_boarder"
+                    android:elevation="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.533"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/skillsContainer" />
+
+
+                <TextView
+                    android:id="@+id/addNewSkills_activityAboutMeAsSeller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="132dp"
+                    android:clickable="true"
+                    android:enabled="false"
+                    android:fontFamily="sans-serif-black"
+                    android:padding="0dp"
+                    android:text="Add New"
+                    android:textColor="#000532"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/skillsContainer"
+                    app:layout_constraintStart_toEndOf="@+id/textView11" />
+
+                <EditText
+                    android:id="@+id/schoolEditText_activityAboutMeAsSeller"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:enabled="false"
+                    android:hint="Previous School/University Attended"
+                    android:inputType="text"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:selectAllOnFocus="true"
+                    android:textSize="13sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView112" />
+
+                <Spinner
+                    android:id="@+id/educationStatus_activityAboutMeAsSeller"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="50dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/schoolEditText_activityAboutMeAsSeller" />
+
+                <Button
+                    android:id="@+id/mainButton_activityAboutMeAsSeller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Update"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/educationStatus_activityAboutMeAsSeller" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

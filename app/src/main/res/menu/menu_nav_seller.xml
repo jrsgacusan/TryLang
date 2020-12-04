@@ -11,12 +11,14 @@
         android:id="@+id/Seller_manageOrdersPage"
         android:title=""
         android:icon="@drawable/ic_manage_orders"
+        android:visible="false"
         ></item>
 
     <item
         android:id="@+id/Seller_notificationsPage"
         android:title=""
         android:icon="@drawable/ic_baseline_notifications_24"
+        android:visible="false"
         />
 
     <item

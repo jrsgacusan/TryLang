@@ -9,9 +9,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".SellerActivity"></activity>
-        <activity android:name=".BuyerActivity" />
-        <activity android:name=".SignUpPage" />
+        <activity android:name=".buyer_activities.DisplaySpecificServiceActivity"></activity>
+        <activity android:name=".seller_activities.AboutMeAsSellerActivity" />
+        <activity android:name=".buyer_activities.ServiceCategoryActivity" />
+        <activity android:name=".seller_activities.BuyersRequestActivity" />
+        <activity android:name=".buyer_activities.ManageRequestActivity" />
+        <activity android:name=".buyer_activities.RequestActivity" />
+        <activity android:name=".seller_activities.CreateServicesActivity" />
+        <activity android:name=".ProfileSettingsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".seller_activities.SellerActivity" />
+        </activity>
+        <activity android:name=".seller_activities.SellerActivity" />
+        <activity android:name=".buyer_activities.BuyerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignUpAcitivity" />
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login">
