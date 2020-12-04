@@ -47,7 +47,7 @@
                     android:layout_height="match_parent"
                     android:alpha=".75"
                     android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/profile_image_default" />
+                    tools:srcCompat="@tools:sample/avatars" />
 
                 <ImageView
                     android:id="@+id/uploadImageView"
@@ -56,7 +56,7 @@
                     android:layout_gravity="center"
                     android:onClick="showPopup"
                     android:padding="40dp"
-                    app:srcCompat="@drawable/plus" />
+                    android:src="@drawable/plus" />
 
             </androidx.cardview.widget.CardView>
 
